@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="btn-del">C</button>
+            <button onclick="appendToDisplay('**')" class="btn-spec">^</button>
+            <button onclick="appendToDisplay('sqrt(')" class="btn-spec">√</button>
+            <button onclick="appendToDisplay('/')" class="btn-spec">/</button>
+            <button onclick="appendToDisplay('7')" class="btn-num">7</button>
+            <button onclick="appendToDisplay('8')" class="btn-num">8</button>
+            <button onclick="appendToDisplay('9')" class="btn-num">9</button>
+            <button onclick="appendToDisplay('*')" class="btn-spec">*</button>
+            <button onclick="appendToDisplay('4')" class="btn-num">4</button>
+            <button onclick="appendToDisplay('5')" class="btn-num">5</button>
+            <button onclick="appendToDisplay('6')" class="btn-num">6</button>
+            <button onclick="appendToDisplay('-')" class="btn-spec">-</button>
+            <button onclick="appendToDisplay('1')" class="btn-num">1</button>
+            <button onclick="appendToDisplay('2')" class="btn-num">2</button>
+            <button onclick="appendToDisplay('3')" class="btn-num">3</button>
+            <button onclick="appendToDisplay('+')" class="btn-spec">+</button>
+            <button onclick="appendToDisplay('0')" class="btn-num">0</button>
+            <button onclick="appendToDisplay('(')" class="btn-spec">(</button>
+            <button onclick="appendToDisplay(')')" class="btn-spec">)</button>
+            <button onclick="calculateResult()" class="btn-result">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
